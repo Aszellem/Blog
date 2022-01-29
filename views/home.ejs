@@ -1,0 +1,13 @@
+<%- include("partilas/header") %>
+<h1>Kezdőlap</h1>
+<p> <%= startingContent %> </p>
+<% posts.forEach(post => { %>
+    <h1> <%=post.title%></h1>
+    <p>
+        <%= post.content.substring(0, 100)+"..."%>
+        <a href="/posts/<%=post.id%>">Tovább</a>
+    </p>
+    
+<% });%>
+
+<%- include("partilas/footer") %>

@@ -1,0 +1,12 @@
+<%- include("partilas/header") %>
+
+<h1>Szerkesztés</h1>
+<form action="/compose" method="post">
+<label>Cím</label>
+<input class="form-control" type="text" name="postTitle">
+<label>Tartalom</label>
+<textarea name="postBody" class="form-control" cols="30" rows="5"></textarea>
+<button class="btn btn-primary mt-3" type="submit">Közzétesz</button>
+</form>
+
+<%- include("partilas/footer") %>
